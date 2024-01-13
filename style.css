@@ -29,7 +29,7 @@ body {
   height: 100%;
 }
 
-@media (max-width: 1560px) {
+@media (min-width: 1200px) {
   main {
     height: 100%;
     color: var(--Dark-Slate-Grey);
@@ -41,6 +41,7 @@ body {
   }
   .signUpCard {
     display: grid;
+    gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
     padding: 1.2rem;
     border-radius: 1rem;
@@ -54,6 +55,13 @@ body {
   button {
     display: block;
   }
+
+  #email {
+    border: 1px solid var(--Dark-Slate-Grey);
+    border-radius: 5px;
+    outline: none;
+  }
+
   .mobileImg {
     display: none;
   }
@@ -110,11 +118,12 @@ body {
     font-size: 16px;
     border-radius: 6px;
     color: var(--White);
+    user-select: none;
     background-color: var(--Dark-Slate-Grey);
   }
 
   .successCard {
-    width: 32%;
+    width: 32vw;
     padding: 2.5rem;
     border-radius: 2rem;
     font-size: 1rem;
@@ -131,7 +140,10 @@ body {
   }
 }
 
-@media (min-width: 375px) {
+@media (min-width: 375px) and (max-width: 999px) {
+  main {
+    background-color: var(--Tomato);
+  }
 }
 
 .signUpCard {
