@@ -3,42 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <title>
-      Frontend Mentor | Newsletter sign-up form with success message
-    </title>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Newsletter sign-up form with success message</title>
   </head>
   <body>
     <main>
       <div class="signUpCard">
+        <img
+          class="mobileImg"
+          src="assets/images/illustration-sign-up-mobile.svg"
+          alt=""
+        />
         <div class="leftSide">
-          <h1>Stay updated!</h1>
-          <p>Join 60,000+ product managers receiving monthly updates on:</p>
-          <div class="listItems">
-            <img src="assets/images/icon-list.svg" alt="" />
-            <p>Product discovery and building what matters</p>
-          </div>
-          <div class="listItems">
-            <img src="assets/images/icon-list.svg" alt="" />
-            <p>Measuring to ensure updates are a success</p>
-          </div>
-          <div class="listItems">
-            <img src="assets/images/icon-list.svg" alt="" />
-            <p>And much more!</p>
-          </div>
+          <div class="leftSideContent">
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <div class="listItems">
+              <img src="assets/images/icon-list.svg" alt="" />
+              <p>Product discovery and building what matters</p>
+            </div>
+            <div class="listItems">
+              <img src="assets/images/icon-list.svg" alt="" />
+              <p>Measuring to ensure updates are a success</p>
+            </div>
+            <div class="listItems">
+              <img src="assets/images/icon-list.svg" alt="" />
+              <p>And much more!</p>
+            </div>
 
-          <label for="email"> Email address </label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="email@company.com"
-          />
-          <button>Subscribe to monthly newsletter</button>
+            <div class="labels">
+              <label for="email"> Email address </label>
+              <label class="error" for="email"> Valid email required! </label>
+            </div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@company.com"
+            />
+            <div class="button">Subscribe to monthly newsletter</div>
+          </div>
         </div>
 
-        <img src="assets/images/illustration-sign-up-desktop.svg" alt="" />
+        <img
+          class="rightSide"
+          src="assets/images/illustration-sign-up-desktop.svg"
+          alt=""
+        />
       </div>
 
       <div class="successCard">
@@ -49,7 +62,7 @@
           <span>ash@loremcompany.com</span>. Please open it and click the button
           inside to confirm your subscription.
         </p>
-        <button>Dismiss message</button>
+        <div class="button">Dismiss message</div>
       </div>
     </main>
   </body>

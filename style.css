@@ -1,0 +1,142 @@
+:root {
+  --Tomato: hsl(4, 100%, 67%);
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: RobotoRegular;
+  src: url(assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url(assets/fonts/Roboto-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: RobotoRegular;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1560px) {
+  main {
+    height: 100%;
+    color: var(--Dark-Slate-Grey);
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Charcoal-Grey);
+  }
+  .signUpCard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.2rem;
+    border-radius: 1rem;
+    background-color: var(--White);
+  }
+  .listItems {
+    display: flex;
+  }
+  label,
+  input,
+  button {
+    display: block;
+  }
+  .mobileImg {
+    display: none;
+  }
+  .leftSide {
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .leftSideContent {
+    width: 84%;
+    justify-self: end;
+  }
+  .leftSideContent > p {
+    padding: 1.2rem 0;
+  }
+  .rightSide {
+    justify-self: end;
+  }
+  h1 {
+    font-size: 3.5rem;
+    font-family: RobotoBold;
+    padding: 1.5rem 0;
+  }
+  .listItems {
+    gap: 1rem;
+    padding: 0.5rem 0;
+  }
+  .labels {
+    display: flex;
+    justify-content: space-between;
+  }
+  label {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-family: RobotoBold;
+  }
+  .error {
+    color: var(--Tomato);
+    display: none;
+  }
+  input {
+    width: 100%;
+    margin: 0.8rem 0;
+    padding: 1rem;
+  }
+  .button {
+    cursor: pointer;
+    margin: 0.8rem 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    color: var(--White);
+    background-color: var(--Dark-Slate-Grey);
+  }
+
+  .successCard {
+    width: 32%;
+    padding: 2.5rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    color: var(--Dark-Slate-Grey);
+    background-color: var(--White);
+  }
+
+  .successCard > p {
+    padding-bottom: 1rem;
+  }
+
+  .successCard > p > span {
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 375px) {
+}
+
+.signUpCard {
+  /* display: none; */
+}
+.successCard {
+  display: none;
+}
