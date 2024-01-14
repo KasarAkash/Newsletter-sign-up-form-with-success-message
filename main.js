@@ -13,6 +13,7 @@ let submitBtn = document.querySelector(".emailBtn");
 let signUpCard = document.querySelector(".signUpCard");
 let successCard = document.querySelector(".successCard");
 let error = document.querySelector(".error");
+let dismissBtn = document.querySelector(".dismissBtn");
 let userEmail = document.querySelector("#userEmail");
 
 submitBtn.addEventListener("click", () => {
@@ -28,3 +29,9 @@ submitBtn.addEventListener("click", () => {
     border-radius: 5px;`;
   }
 });
+
+dismissBtn.onclick = () => {
+  location.reload();
+  signUpCard.style.display = "grid";
+  successCard.style.display = "none";
+};
